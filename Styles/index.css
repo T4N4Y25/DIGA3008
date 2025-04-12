@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+body {
+  background: url(../Images/BackgroundImages/Background_Home.gif) no-repeat
+    fixed;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.homecontent {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.ImageContainer {
+  border: solid #fc53e9 7px;
+}
+
+.PageImage {
+  height: 250px;
+  width: 250px;
+
+  filter: sepia(1) saturate(2.5) hue-rotate(190deg) brightness(0.3);
+}
+
+.u-homelink {
+  color: #6bf3ff;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  /* margin-left: 17%; */
+  position: absolute;
+  font-size: 23px;
+  text-align: center;
+  bottom: 7%;
+  /* outline: 3px ridge #A29A00;*/
+}
+
+.u-blogs {
+  .u-homelink {
+    left: 4%;
+  }
+}
+
+.u-essays {
+  .u-homelink {
+    left: 29.5%;
+  }
+}
+
+.u-design {
+  .u-homelink {
+    right: 30.5%;
+  }
+}
+
+.u-portfolio {
+  .u-homelink {
+    right: 2.5%;
+  }
+}
