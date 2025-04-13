@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Academic Projects" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../normalization.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../normalization.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../Styles/portfolio.css">
   </head>
 
   <body>
     <section class="u-navbar">
       <header class="page-header">
-      <div class="bannerlogo">
-        <h1 class="p-Banner">Neo-Tanay</h1>
-        <figure class="logo">
-          <img src = ../Images/PageLogos/Logo.jpg alt = "Logo">
-        </figure>
-      </div>
-
-    </header>
+        <div class="bannerlogo">
+          <h1 class="p-Banner">Neo-Tanay</h1>
+          <figure class="logo">
+            <img src = ../Images/PageLogos/Logo.jpg alt = "Logo">
+          </figure>
+        </div>
+      </header>
 
       <nav>
         <ul class="u-navbarlist">
@@ -29,18 +29,124 @@
               >Weekly Blogs
             </a>
           </li>
-          <li><a class="u-navbarlink" href="../Essays/essays.html">Essays</a></li>
+          <li>
+            <a class="u-navbarlink" href="../Essays/essays.html">Essays</a>
+          </li>
           <li>
             <a class="u-navbarlink" href="../Design/design.html"> Design </a>
           </li>
           <li>
-            <a class="selected" href="portfolio.html">
-              Portfolio
-            </a>
+            <a class="selected" href="portfolio.html"> Portfolio </a>
           </li>
-          <li><a class="u-navbarlink" href="../AboutMe/info.html">About Me</a></li>
+          <li>
+            <a class="u-navbarlink" href="../AboutMe/info.html">About Me</a>
+          </li>
         </ul>
       </nav>
     </section>
+
+    <main>
+      <section class="QuickLinksContainer">
+        <div class="QuickLinks_Games">
+          <a href="#Games">
+            <h2 class="p-GamesTitle">Games</h2>
+          </a>
+          <ol class="GamesList">
+            <a href="#AirHockey"><li>AirHockey</li></a>
+            <a href="#Inventory"><li>Village Inventory System</li></a>
+            <a href="#Winter"><li>Winter is Coming</li></a>
+          </ol>
+        </div>
+
+        <div class="QuickLinks_Electronics">
+          <h2 class="p-ElectronicsTitle">Electronics</h2>
+          <ol class="ElectronicsList">
+            <li>Clap-Detection Circuit</li>
+          </ol>
+        </div>
+
+        <div class="QuickLinks_Software">
+          <h2 class="p-SoftwareTitle">Software and Data Structures</h2>
+          <ol>
+            <li>Assembly Project</li>
+            <li>C++ Project</li>
+            <li>Classes in C++</li>
+            <li>Linked Lists</li>
+            <li>Doubly Linked Lists</li>
+            <li>Stacks and Queues</li>
+            <li>Search Trees</li>
+          </ol>
+        </div>
+      </section>
+      <div class="e-content">
+        <section class="Intro">
+          <h1 class="p-MainTitle">Project Portfolio</h1>
+          <p class="paragraph">
+            Welcome to my project portfolio where you'll get to see a showcase
+            of various academic projects I have completed during my time at Wits
+            University!
+          </p>
+        </section>
+
+        <section class="GamesSection">
+          <h2 id="Games" class="p-GamesTitleTwo">Games</h2>
+          <div class="ProjectDisplay">
+            <h3 id="AirHockey" class="p-GameProject">Air-Hockey Simulator</h3>
+            <div class="ImageandLinks">
+              <figure class="screenshot"><img src="../Images/PortfolioImages/Flaming AirHockey Cover.png" alt="Air-Hockey Image"> </figure>
+              <div class="LinksTable">
+                <h4 class="p-Links">Links</h4>
+                
+                 <a target="_blank" class="u-linkurl" href="https://t4n4y25.itch.io/flaming-air-hockey">Download Build</a>
+                  <a target="_blank" class="u-github" href="https://github.com/T4N4Y25/Flaming-AirHockey">GitHub Repository</a>
+              </div>
+            </div>
+
+            <p class="paragraph">
+              This is a simple simulation where you are able to play games of
+              Air-Hockey against an AI opponent with added twists to the game
+              such as portals and more!
+            </p>
+          </div>
+
+          <div class="ProjectDisplay">
+            <h3 id="Inventory" class="p-GameProject">
+              Village Inventory System
+            </h3>
+            <div class="ImageandLinks">
+              <figure class="screenshot"><img src="../Images/PortfolioImages/Inventory.png" alt="Inventory Game"></figure>
+              <div class="LinksTable">
+                <h4 class="p-Links">Links</h4>
+                <a target="_blank" class="u-linkurl" href="https://t4n4y25.itch.io/village-inventory-system">Download Build</a>
+              </div>
+            </div>
+
+            <p class="paragraph">
+              This is a simple inventory simulator where player's can manage
+              their current items between a shop, their backpack and a chest.
+            </p>
+          </div>
+
+          <div class="ProjectDisplay">
+            <h3 class="p-GameProject">Winter is Coming</h3>
+            <div class="ImageandLinks">
+              <figure class="screenshot"> <img src="../Images/PortfolioImages/WinterIsComing.jpg" alt="Winter is Coming Game"> </figure>
+              <div class="LinksTable">
+                <h4 id="Winter" class="p-Links">Links</h4>
+                <a target="_blank" class="u-linkurl" href="https://t4n4y25.itch.io/winter-is-coming">Download Build</a>
+              </div>
+            </div>
+
+            <p class="paragraph">
+              Winter is Coming is my first full fledge game in Unity created
+              in a group of three where I was responsible for programming and
+              creating assets in blender. The game has you traverse a grim
+              maze, collecting items that will help you and avoiding the
+              creatures lurking within!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

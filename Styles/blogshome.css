@@ -1,87 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-.p-PageDescription{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-    display: none;
+.p-PageDescription {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+  display: none;
 }
 
 body {
-    position: relative;
-    margin: 0;
-    background: url(../Images/PageLogos/BlogsLogo_beta.jpeg) no-repeat center center;
-    background-size: cover;
-    min-height: 100vh;
-  }
-  
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(5, 5, 20, 0.95); 
-    z-index: -1;
-  }
-  
-  
-
-.u-blogsnav{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 10%;
-}
-.p-blogweek{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-    font-size: 35px;
-    justify-content: center;
-    
+  position: relative;
+  margin: 0;
+  background: url(../Images/PageLogos/BlogsLogo_beta.jpeg) no-repeat center
+    center;
+  background-size: cover;
+  min-height: 100vh;
 }
 
-.u-blogsnav{
-    text-decoration: none;      
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 20, 0.95);
+  z-index: -1;
 }
 
-.p-blogtitle{
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffff;
-    font-size: 15px;
+.u-blogsnav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10%;
+}
+.p-blogweek {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+  font-size: 35px;
+  justify-content: center;
 }
 
-
-.u-blogcard{
-    height: 300px;
-    width: 200px;
-    border: solid #fc53e9 7px;
-    padding: 1rem;
+.u-blogsnav {
+  text-decoration: none;
 }
 
-.u-blogcard:hover{
-    height: 310px;
-    width: 210px;
-    animation: flicker 1s linear infinite;
+.p-blogtitle {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffff;
+  font-size: 15px;
+}
+
+.u-blogcard {
+  height: 300px;
+  width: 200px;
+  border: solid #fc53e9 7px;
+  padding: 1rem;
+}
+
+.u-blogcard:hover {
+  height: 310px;
+  width: 210px;
+  animation: flicker 1s linear infinite;
 }
 
 @keyframes flicker {
-    0%, 50%{
-      border-color: #A29A00;
-    }
-    51%, 100%{
-      border-color: #fc53e9;
-    }
+  0%,
+  50% {
+    border-color: #a29a00;
   }
+  51%,
+  100% {
+    border-color: #fc53e9;
+  }
+}
 
 /*.blogcontainer{
     position: relative;
