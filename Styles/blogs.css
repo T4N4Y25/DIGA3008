@@ -26,6 +26,10 @@
     gap: 20px; 
   }
 
+  main{
+    padding-bottom:100px; 
+  }
+
   .u-arrow{
     border: solid #fc53e9 2px;
     color: #fc53e9;
@@ -113,5 +117,15 @@
 
   .paragraph{
     word-spacing: 3px;
+  }
+
+  .handdrawn{
+    justify-content: center;
+    display: flex;
+  }
+
+  .handdrawn img{
+    height: 500px;
+    width: 500px;
   }
   

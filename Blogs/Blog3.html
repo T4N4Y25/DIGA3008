@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Interaction Design" />
     <title>Week 3 Blog</title>
+    <link rel="stylesheet" href="../normalization.css">
+    <link rel="stylesheet" href="../Styles/blogs.css">
   </head>
 
   <body>
-    <a class="u-blogshome" href="BlogHomePage.html"> Back to Blogs Home </a>
+    <a class="u-blogshome" href="BlogHomePage.html"> <button class="exit" >&lAarr;</button> </a>    
     <main>
       <article class="h-entry">
         <h1 class="p-MainTitle">
@@ -57,15 +59,18 @@
             <img
               src="../Images/WireFrame1.jpg"
               alt="The layout for the Website"
-              width="500"
-              height="500"
             />
           </figure>
         </div>
       </article>
     </main>
 
-    <a class="u-previousblog" href="Blog2.html"> Previous Blog </a>
-    <a class="u-nextblog" href="Blog4.html"> Next Blog </a>
+    <footer>
+      <a class="u-previousblog" href="Blog2.html"> <button class="u-arrow" >&lt;</button></a>
+      <div class="week-progress-container">
+        <div class="week-progress-bar" style="width: 60%"></div>
+      </div>
+      <a class="u-nextblog" href="Blog4.html"> <button class="u-arrow" >&gt;</button></a>
+    </footer>
   </body>
 </html>

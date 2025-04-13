@@ -69,6 +69,8 @@ body {
 }
 
 .u-blogcard:hover{
+    height: 310px;
+    width: 210px;
     animation: flicker 1s linear infinite;
 }
 
