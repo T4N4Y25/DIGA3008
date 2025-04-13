@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Keep DesignIntro centered */
+.DesignIntro {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .p-DesignHeading{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bf3ff;
+  }
+
+  .p-DesignHeadingTwo{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bf3ff;
+  }
+
+  .p-DesignHeadingThree{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bf3ff;
+  }
+
+  .p-DesignHeadingFour{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bf3ff;
+  }
+
+  .p-DesignHeadingFive{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bf3ff;
+  }
+
+  .u-blogref{
+    color: #6bf3ff;
+  }
+
+  .u-blogref:hover{
+    color:#A29a00
+  }
+
+  ul{
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  ul .p-keyword{
+    color: #6bf3ff;
+  }
+
+
+
+  .DesignParagraph{
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+  }
+  
+  body{
+    background-color: rgba(5, 5, 20, 0.95);
+  }
+
+  /* New flex container for split layout */
+  .DesignLayoutSplit {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 2rem 2rem 2rem;
+  }
+  
+  /* Left column (Quick Links) */
+  .QuickLinksContainer {
+    
+    align-self: flex-start;
+    position: sticky;
+    top: 2rem;
+    border-right: solid #6bf3ff 2px;
+    padding-right: 2rem;
+  }
+  
+  /* Right column (main content) */
+  .e-content {
+    flex: 1;
+  }
+  
+  /* Optional styles */
+  .QuickLinkList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .QuickLinkList li {
+    margin-bottom: 1rem;
+  }
+  
+  .QuickLinkList a {
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: 500;
+    font-family: "Audiowide", sans-serif;
+    font-style: normal;
+  }
+  
+  .QuickLinkList a:hover {
+    color: #A29a00;
+  }
+
+  .DesignIxD{
+    border-bottom: solid #ffffff 2px;
+  }
+
+  .StyleProcess{
+    border-bottom: solid #ffffff 2px;
+  }
+
+  .refimages{
+    display: grid;
+  }
+
+  .refimages img{
+    height: 500px;
+    width: auto;
+  }
+
+  figure{
+    text-align: center;
+  }
+
+  .handdrawn img{
+    height:500px;
+    width:auto
+  }
+
+  .UserFlow img{
+    height: 500px;
+    width: auto;
+  }
+
+  .Wireframe img{
+    height: 600px;
+    width: auto;
+  }
+
+  .moodboard img{
+    height:450px;
+    width: auto;
+  }
+  
