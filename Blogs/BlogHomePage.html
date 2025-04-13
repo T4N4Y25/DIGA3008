@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blog Home" />
     <title>Blog Home</title>
-    <link rel="stylesheet" href="../normalization.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../normalization.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../Styles/blogshome.css" />
   </head>
 
   <body>
     <section class="u-navbar">
       <header class="page-header">
-      <div class="bannerlogo">
-        <h1 class="p-Banner">Neo-Tanay</h1>
-        <figure class="logo">
-          <img src = ../Images/PageLogos/Logo.jpg alt = "Logo">
-        </figure>
-      </div>
-
-    </header>
+        <div class="bannerlogo">
+          <h1 class="p-Banner">Neo-Tanay</h1>
+          <figure class="logo">
+            <img src = ../Images/PageLogos/Logo.jpg alt = "Logo">
+          </figure>
+        </div>
+      </header>
 
       <nav>
         <ul class="u-navbarlist">
           <li><a class="u-navbarlink" href="../index.html">Homepage </a></li>
           <li>
-            <a class="selected" href="BlogHomePage.html"
-              >Weekly Blogs
-            </a>
+            <a class="selected" href="BlogHomePage.html">Weekly Blogs </a>
           </li>
-          <li><a class="u-navbarlink" href="../Essays/essays.html">Essays</a></li>
+          <li>
+            <a class="u-navbarlink" href="../Essays/essays.html">Essays</a>
+          </li>
           <li>
             <a class="u-navbarlink" href="../Design/design.html"> Design </a>
           </li>
@@ -38,19 +38,65 @@
               Portfolio
             </a>
           </li>
-          <li><a class="u-navbarlink" href="../AboutMe/info.html">About Me</a></li>
+          <li>
+            <a class="u-navbarlink" href="../AboutMe/info.html">About Me</a>
+          </li>
         </ul>
       </nav>
     </section>
 
-    <h1 class="p-PageDescription">My Weekly Blogs</h1>
-    <nav>
-      <ol class="u-blogsnav">
-        <li><a class="u-blogsnavlink" href="Blog1.html">Week 1 Blog</a></li>
-        <li><a class="u-blogsnavlink" href="Blog2.html">Week 2 Blog</a></li>
-        <li><a class="u-blogsnavlink" href="Blog3.html">Week 3 Blog</a></li>
-        <li><a class="u-blogsnavlink" href="Blog4.html">Week 4 Blog</a></li>
-      </ol>
-    </nav>
+    <main>
+      <h1 class="p-PageDescription">My Weekly Blogs</h1>
+      <nav>
+        <div class="blogcontainer">
+          <ol class="u-blogsnav">
+            <li>
+              <a class="u-blogsnav" href="Blog1.html">
+                <div class="u-blogcard">
+                  <p class="p-blogweek">Week 1 Blog</p>
+                  <p class="p-blogtitle">
+                    Proposal for a Universal Electronic Publishing System and
+                    Archive
+                  </p>
+                </div>
+              </a>
+
+            </li>
+
+            <li>
+              <a class="u-blogsnav" href="Blog2.html">
+                <div class="u-blogcard">
+                  <p class="p-blogweek">Week 2 Blog</p>
+                  <p class="p-blogtitle">
+                    You Say You Want a Revolution? Hypertext and the Laws of
+                    Media (1991)
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="u-blogsnav" href="Blog3.html">
+              <div class="u-blogcard">
+                <p class="p-blogweek">Week 3 Blog</p>
+                <p class="p-blogtitle">The concept of Interaction Design</p>
+              </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="u-blogsnav" href="Blog4.html">
+              <div class="u-blogcard">
+                <p class="p-blogweek">Week 4 Blog</p>
+                <p class="p-blogtitle">
+                  Design Section of the Website and the IxD Process
+                </p>
+              </div>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </nav>
+    </main>
   </body>
 </html>

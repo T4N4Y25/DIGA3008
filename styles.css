@@ -46,6 +46,8 @@
   font-style: normal;
   display: inline;
   text-transform: uppercase;
+  text-decoration: none;
+  border: solid #a29a00 3px;
 }
 
 .bannerlogo {
