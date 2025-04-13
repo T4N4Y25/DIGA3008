@@ -69,6 +69,7 @@
     font-weight: 400;
     font-style: normal;
     color: #ffff;
+    
   }
   
   body{
@@ -81,6 +82,7 @@
     flex-direction: row;
     gap: 2rem;
     padding: 0 2rem 2rem 2rem;
+    
   }
   
   /* Left column (Quick Links) */
@@ -128,6 +130,14 @@
     border-bottom: solid #ffffff 2px;
   }
 
+  .StyleGuide{
+    border-bottom: solid white 2px;
+  }
+
+  .WireframeSection{
+    border-bottom: solid white 2px;
+  }
+
   .refimages{
     display: grid;
   }
@@ -159,5 +169,10 @@
   .moodboard img{
     height:450px;
     width: auto;
+  }
+
+  .tobig img{
+    width:600px;
+    height:auto;
   }
   
