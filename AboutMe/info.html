@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Tanay Rangasamy" />
     <title>Profile</title>
-    <link rel="stylesheet" href="../normalization.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../normalization.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../Styles/profile.css" />
   </head>
 
   <body>
     <section class="u-navbar">
       <header class="page-header">
-      <div class="bannerlogo">
-        <h1 class="p-Banner">Neo-Tanay</h1>
-        <figure class="logo">
-          <img src = ../Images/PageLogos/Logo.jpg alt = "Logo">
-        </figure>
-      </div>
-
-    </header>
+        <div class="bannerlogo">
+          <h1 class="p-Banner">Neo-Tanay</h1>
+          <figure class="logo">
+            <img src = ../Images/PageLogos/Logo.jpg alt = "Logo">
+          </figure>
+        </div>
+      </header>
 
       <nav>
         <ul class="u-navbarlist">
@@ -29,7 +29,9 @@
               >Weekly Blogs
             </a>
           </li>
-          <li><a class="u-navbarlink" href="../Essays/essays.html">Essays</a></li>
+          <li>
+            <a class="u-navbarlink" href="../Essays/essays.html">Essays</a>
+          </li>
           <li>
             <a class="u-navbarlink" href="../Design/design.html"> Design </a>
           </li>
@@ -45,15 +47,53 @@
     <main>
       <h1 class="p-Name">About Me</h1>
 
-      <p data-about="Me">
-        My name is Tanay Rangasamy. I am an aspiring game developer currently
-        studying a Bachelor of Enigeering Science in Digital Arts at Wits
-        University. I am proficient with multiple programming languages as well
-        as elecronics and I have some experience in animation using 3D software
-        such as Blender. I have had a passion for video games and animation
-        since I was little and I am hoping to one day invoke that passion in
-        others. I hope you enjoy your experience with Neo-Tanay!
-      </p>
+      <div class="PageContent">
+        <div class="ImageContainer">
+          <figure class="Image">
+            <img
+              src="../Images/Profile/AnimatedProfile.png"
+              alt="A Profile Image of Me"
+            />
+          </figure>
+        </div>
+
+        <div class="InfoContainer">
+          <div class="Info">
+            <p data-about="Me">
+              My name is Tanay Rangasamy. I am an aspiring game developer
+              currently studying a Bachelor of Enigeering Science in Digital
+              Arts at Wits University. I am proficient with multiple programming
+              languages as well as elecronics and I have some experience in
+              animation using 3D software such as Blender. I have had a passion
+              for video games and animation since I was little and I am hoping
+              to one day invoke that passion in others. I hope you enjoy your
+              experience with Neo-Tanay!
+            </p>
+          </div>
+          <div class="Contact">
+            <h2 class="p-BlockTitle">Find Me At:</h2>
+            <div class="email">
+              <div class="p-icon">&#9993;</div>
+              <a class="u-email" href="mailto:tanayrangasamy@gmail.com"
+                >tanayrangasamy@gmail.com</a
+              >
+            </div>
+            <div class="CV">
+              <h2 class="p-BlockTitle">View or download my CV here!</h2>
+              <div class="pdfs">
+                <a
+                  href="../Downloadables/Tanay Rangasamy (CV2).pdf"
+                  target="_blank"
+                  >View CV</a
+                >
+                <a href="../Downloadables/Tanay Rangasamy (CV2).pdf" download
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
