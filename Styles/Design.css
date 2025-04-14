@@ -3,176 +3,177 @@
 
 /* Keep DesignIntro centered */
 .DesignIntro {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
-  .p-DesignHeading{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-  }
+.p-DesignHeading {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+}
 
-  .p-DesignHeadingTwo{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-  }
+.p-DesignHeadingTwo {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+}
 
-  .p-DesignHeadingThree{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-  }
+.p-DesignHeadingThree {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+}
 
-  .p-DesignHeadingFour{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-  }
+.p-DesignHeadingFour {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+}
 
-  .p-DesignHeadingFive{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6bf3ff;
-  }
+.p-DesignHeadingFive {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+}
 
-  .u-blogref{
-    color: #6bf3ff;
-  }
+.u-blogref {
+  color: #6bf3ff;
+}
 
-  .u-blogref:hover{
-    color:#A29a00
-  }
+.u-blogref:hover {
+  color: #a29a00;
+}
 
-  ul{
-    color: #ffffff;
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+ul {
+  color: #ffffff;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  ul .p-keyword{
-    color: #6bf3ff;
-  }
+ul .p-keyword {
+  color: #6bf3ff;
+}
+
+.DesignParagraph {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffff;
+}
+
+body {
+  background-color: rgba(5, 5, 20, 0.95);
+}
 
 
+.DesignLayoutSplit {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
 
-  .DesignParagraph{
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffff;
-    
-  }
-  
-  body{
-    background-color: rgba(5, 5, 20, 0.95);
-  }
 
-  /* New flex container for split layout */
-  .DesignLayoutSplit {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 0 2rem 2rem 2rem;
-    
-  }
-  
-  /* Left column (Quick Links) */
-  .QuickLinksContainer {
-    
-    align-self: flex-start;
-    position: sticky;
-    top: 2rem;
-    border-right: solid #6bf3ff 2px;
-    padding-right: 2rem;
-  }
-  
-  /* Right column (main content) */
-  .e-content {
-    flex: 1;
-  }
-  
-  /* Optional styles */
-  .QuickLinkList {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .QuickLinkList li {
-    margin-bottom: 1rem;
-  }
-  
-  .QuickLinkList a {
-    text-decoration: none;
-    color: #00ffff;
-    font-weight: 500;
-    font-family: "Audiowide", sans-serif;
-    font-style: normal;
-  }
-  
-  .QuickLinkList a:hover {
-    color: #A29a00;
-  }
+.QuickLinksContainer {
+  align-self: flex-start;
+  position: sticky;
+  top: 2rem;
+  border-right: solid #6bf3ff 2px;
+  padding-right: 2rem;
+}
 
-  .DesignIxD{
-    border-bottom: solid #ffffff 2px;
-  }
+.e-content {
+  flex: 1;
+}
 
-  .StyleProcess{
-    border-bottom: solid #ffffff 2px;
-  }
+.QuickLinkList {
+  list-style: none;
+  padding: 0;
+}
 
-  .StyleGuide{
-    border-bottom: solid white 2px;
-  }
+.QuickLinkList li {
+  margin-bottom: 1rem;
+}
 
-  .WireframeSection{
-    border-bottom: solid white 2px;
-  }
+.QuickLinkList a {
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: 500;
+  font-family: "Audiowide", sans-serif;
+  font-style: normal;
+}
 
-  .refimages{
-    display: grid;
-  }
+.QuickLinkList a:hover {
+  color: #a29a00;
+}
 
-  .refimages img{
-    height: 500px;
-    width: auto;
-  }
+.SpecialLink {
+  border: solid #6bf3ff 2px;
+  padding: 5px;
+}
 
-  figure{
-    text-align: center;
-  }
+.DesignIntro {
+  border-bottom: solid #ffffff 2px;
+}
 
-  .handdrawn img{
-    height:500px;
-    width:auto
-  }
+.DesignIxD {
+  border-bottom: solid #ffffff 2px;
+}
 
-  .UserFlow img{
-    height: 500px;
-    width: auto;
-  }
+.StyleProcess {
+  border-bottom: solid #ffffff 2px;
+}
 
-  .Wireframe img{
-    height: 600px;
-    width: auto;
-  }
+.StyleGuide {
+  border-bottom: solid white 2px;
+}
 
-  .moodboard img{
-    height:450px;
-    width: auto;
-  }
+.WireframeSection {
+  border-bottom: solid white 2px;
+}
 
-  .tobig img{
-    width:600px;
-    height:auto;
-  }
-  
+.refimages {
+  display: grid;
+}
+
+.refimages img {
+  height: 500px;
+  width: auto;
+}
+
+figure {
+  text-align: center;
+}
+
+.handdrawn img {
+  height: 500px;
+  width: auto;
+}
+
+.UserFlow img {
+  height: 500px;
+  width: auto;
+}
+
+.Wireframe img {
+  height: 600px;
+  width: auto;
+}
+
+.moodboard img {
+  height: 450px;
+  width: auto;
+}
+
+.tobig img {
+  width: 600px;
+  height: auto;
+}

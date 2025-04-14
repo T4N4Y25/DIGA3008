@@ -47,7 +47,8 @@
   display: inline;
   text-transform: uppercase;
   text-decoration: none;
-  border: solid #0bbaff 3px;
+  border: solid #a29a00 3px;
+  padding: 1rem;
 }
 
 .bannerlogo {
