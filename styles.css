@@ -80,19 +80,14 @@
   }
 
   .u-navbarlist {
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
     gap: 15px;
-    width: 100%;
     margin-right: 0;
   }
-
-  .u-navbarlink, 
+ 
   .selected {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    text-align: left;
+    border: none;
   }
 
   .logo img {

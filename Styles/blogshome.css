@@ -89,34 +89,3 @@ body::before {
 
 }
 
-/*.blogcontainer{
-    position: relative;
-    display: flex;
-    align-items: center;
-   overflow: hidden;                 
-    max-width: 100%;
-    margin: 5% auto;
-    margin-top: -60px;
-} */
-
-/*.scroll-left,
-.scroll-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(5, 5, 20, 0.8);
-  color: #6bf3ff;
-  font-size: 2rem;
-  border: 3px solid #fc53e9;               /*Need JavaScript to make the scroll button
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.scroll-left {
-  left: 10px;
-}
-
-.scroll-right {
-  right: 10px;
-} */
