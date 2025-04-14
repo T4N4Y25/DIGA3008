@@ -162,3 +162,71 @@ main {
         border-color: #fc53e9;
     }
 }
+
+@media (max-width: 786px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .QuickLinksContainer {
+    position: static;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #6bf3ff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .e-content {
+    flex: 1;
+    width: 100%;
+  }
+
+  .ImageandLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .screenshot {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .screenshot img {
+    width: 100%;
+    height: auto;
+  }
+
+  .LinksTable {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .LinksTable a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .p-GamesTitle,
+  .p-GamesTitleTwo {
+    display: block;
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .GamesList li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+

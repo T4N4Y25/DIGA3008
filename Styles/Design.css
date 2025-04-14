@@ -177,3 +177,48 @@ figure {
   width: 600px;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .DesignLayoutSplit {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .QuickLinksContainer {
+    position: static;
+    border-right: none;
+    border-bottom: solid #6bf3ff 2px;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .SpecialLink{display: none;}
+
+  .refimages img,
+  .handdrawn img,
+  .UserFlow img,
+  .Wireframe img,
+  .moodboard img,
+  .tobig img {
+    width: 100%;
+    height: auto;
+  }
+
+  .QuickLinkList a {
+    font-size: 0.9rem;
+  }
+
+  .DesignParagraph {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .p-DesignHeading,
+  .p-DesignHeadingTwo,
+  .p-DesignHeadingThree,
+  .p-DesignHeadingFour,
+  .p-DesignHeadingFive {
+    font-size: 1.25rem;
+  }
+}

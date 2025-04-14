@@ -81,6 +81,14 @@ body::before {
   }
 }
 
+@media (max-width:1000px){
+  .u-blogsnav{
+    display: grid;
+    justify-content: center;
+  }
+
+}
+
 /*.blogcontainer{
     position: relative;
     display: flex;
