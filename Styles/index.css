@@ -103,6 +103,10 @@ body {
 
 }
 
+.scanlines{
+  z-index:0;
+}
+
 .portfolioinfo{
   font-family: "Barlow", sans-serif;
   font-weight: 400;

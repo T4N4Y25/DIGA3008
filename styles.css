@@ -54,18 +54,44 @@
 .bannerlogo {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0px;
   margin-left: -10px;
 }
 
 .logo img {
-  width: 70px;
-  height: 50px;
-  display: none;
+  width: 150px;
+  height: 75px;
+  margin-left: -60px;
+  padding-left: 0px;
+  /*display: none;*/
+}
+
+.u-navbarlist {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+  z-index: 1000;
+}
+
+/* Slide-out when hidden */
+.u-navbarlist.hide {
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  /*display: none;*/
+}
+
+body{
+  overflow-x:hidden;
 }
 
 @media (max-width:778px){
-  .u-navbar {
+    .u-navbar {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
@@ -79,18 +105,29 @@
     margin-bottom: 10px;
   }
 
-  .u-navbarlist {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-right: 0;
-  }
- 
-  .selected {
-    border: none;
-  }
-
-  .logo img {
-    display: none;
-  }
+.u-navbarlist {
+  position: fixed; 
+  top: 80px; 
+  left: 0;
+  width: 100%; 
+  background-color: #0d0d51;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: translateX(0);
+  pointer-events: all;
+  z-index: index 0;
 }
+
+.u-navbarlist.hide {
+  opacity: 0;
+  transform: translateX(-110%); 
+  pointer-events: none;
+}
+}
+
+/*.hide{
+  display: none;
+}*/
