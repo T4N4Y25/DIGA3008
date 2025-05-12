@@ -52,9 +52,21 @@ body {
   padding: 2rem;
   background-color: rgba(5, 5, 20, 0.95);
   text-align: center;
-  display: grid;
+ /* display: grid*/;
 }
 
+.page-card {
+  display: none;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-card.visible {
+  display: flex;
+}
 
 
 
@@ -64,8 +76,8 @@ body {
   padding: 2rem;
   background-color: rgba(5, 5, 20, 0.95);
   text-align: center;
-  display: grid;
-}
+ /* display: grid;*/
+ }
 
 .essaysinfo{
   font-family: "Barlow", sans-serif;
@@ -81,7 +93,7 @@ body {
   padding: 5rem;
   background-color: rgba(5, 5, 20, 0.95);
   text-align: center;
-  display: grid;
+  /*display: grid;*/
 }
 
 .designinfo{
@@ -99,12 +111,13 @@ body {
   overflow: hidden;
   background-color: rgba(5, 5, 20, 0.95);
   text-align: center;
-  display: grid;
+  /*display: grid;*/
 
 }
 
 .scanlines{
   z-index:0;
+  overflow: hidden;
 }
 
 .portfolioinfo{
@@ -171,5 +184,23 @@ body {
   }
 }
 
+/*Trying out a rain effect */
+/*
+  body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #0e0e0e; 
+} 
+
+#rain-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+*/
 
 

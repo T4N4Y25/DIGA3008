@@ -9,7 +9,8 @@ const blogcards = [
     num: 2,
     link: "Blog2.html",
     Week: "Week 2 Blog",
-    title: "You Say You Want a Revolution? Hypertext and the Laws of Media (1991)",
+    title:
+      "You Say You Want a Revolution? Hypertext and the Laws of Media (1991)",
   },
   {
     num: 3,
@@ -29,40 +30,53 @@ const blogcards = [
     Week: "Week 7 Blog",
     title: "UI and UX andlysis for Essay 1",
   },
+  {
+    num: 10,
+    link: "Blog10.html",
+    Week: "Week 10 Blog",
+    title:
+      "A close reading on “How Geography Shapes—and Is Shaped by—the Internet” ",
+  },
 ];
 
-let blogcontainer = document.querySelector('.u-blogsnav');
+let blogcontainer = document.querySelector(".u-blogsnav");
 let cardsperpage = 3;
 let index = 0;
 
-function DisplayBlogs(bloglist){
-    let visibleblogs = bloglist.slice(index, index + cardsperpage);
-    let displayblog = visibleblogs.map(function(visibleblogs){
-        return `            <li>
+function DisplayBlogs(bloglist) {
+  let visibleblogs = bloglist.slice(index, index + cardsperpage);
+  let displayblog = visibleblogs
+    .map(function (visibleblogs) {
+      return `            <li>
               <a class="u-blogsnav" href="${visibleblogs.link}">
                 <div class="u-blogcard">
-                  <p class="p-blogweek">"${visibleblogs.Week}"</p>
+                  <p class="p-blogweek">${visibleblogs.Week}</p>
                   <p class="p-blogtitle">
-                    "${visibleblogs.title}"
+                    ${visibleblogs.title}
                   </p>
                 </div>
               </a>
-            </li>`
+            </li>`;
     })
     .join(" ");
-    blogcontainer.innerHTML = displayblog;
-    index += cardsperpage -1;
+  blogcontainer.innerHTML = displayblog;
+  index += cardsperpage - 1;
 }
 
 DisplayBlogs(blogcards);
+/*
+let buttonnext = document
+  .querySelector(".next-btn")
+  .addEventListener("click", NextBlog);
+*/
 
-let buttonnext = document.querySelector('.next-btn').addEventListener("click",NextBlog);
+let scroll = window.addEventListener("scroll",NextBlog);
 
-function NextBlog(){
-   // index+=cardsperpage;
-   if(index > blogcards.length){
+function NextBlog() {
+  // index+=cardsperpage;
+  if (index > blogcards.length) {
     index = 0;
-   }
-    DisplayBlogs(blogcards);
-   // alert("Button was clicked");
+  }
+  DisplayBlogs(blogcards);
+  // alert("Button was clicked");
 }

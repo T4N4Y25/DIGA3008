@@ -1,5 +1,5 @@
-const progressbar = [9,18,27,36,45,55,34,64,73,82,91,100];
-const blogIndexMap = {
+const progressbar = [9,18,27,36,45,55,34,64,73,82,91,100]; //Different percentage width for each blogs progress bar
+const blogIndexMap = { //Due to the blog names not being sequential an array is made to help indexing
   "Blog1.html": 0,
   "Blog2.html": 1,
   "Blog3.html": 2,
@@ -12,38 +12,38 @@ const blogIndexMap = {
   "Blog12.html": 9,
   "Blog13.html": 10,
 };
-let pbclass = document.querySelector('.week-progress-bar');
+let pbclass = document.querySelector('.week-progress-bar'); //Get th progress bar container
 
-let page = window.location.pathname.split("/").pop(); // Get "BlogX.html"
-let index = blogIndexMap[page] ?? 0; 
+let page = window.location.pathname.split("/").pop(); // Get the the blog name according to the page eg.../Blog13.html will return Blog13.html
+let index = blogIndexMap[page] ?? 0; //Use the page name to get the correspodning index to use in progressbar
 
-function UpdatePB(){
-    let progress = progressbar[index];
-    let increment = progress/10;
-    let current = 0;
+function UpdatePB(){ //Function to dynamically update the progress bar
+    let progress = progressbar[index]; //Store the indexed value to get a max value for the bar to reach
+    let increment = progress/10; //Determines the rate at which the progress bar updates
+    let current = 0; //variable that updates accordingly until the max value is reached
 
-    if(index === 0){
+    if(index === 0){ //A check to ensure current does not get an incorrect value
         current = 0;
     }
     else{
-        current = progressbar[index-1];
+        current = progressbar[index-1]; //current starts at the previous index value so the progress bar grows from there to the next value
     }
-   // pbclass.style.width = `${progress}%`; 
-    let iterate = setInterval(animatedeffect,10);
+
+    let iterate = setInterval(animatedeffect,10); //setInterval helps create an animated transition (from exercise 3 of the class exercises)
    function animatedeffect(){
-    if(current < progress){
+    if(current < progress){  //current grows accordingly via the increment value until it reaches the max value-progress
         current += increment;
-        pbclass.style.width = `${current}%`; 
+        pbclass.style.width = `${current}%`; //Adds the style and width to the HTML
     }
     else{
         current = progress;
          pbclass.style.width = `${current}%`; 
-        clearInterval(iterate);
+        clearInterval(iterate); //Stop the setInterval method when the max value is reached
     }
    }
 
 }
-/*
+/*This was an alternative method to get the correct index mapped via buttons but this method does not work if the user starts at a blog that isn't Blog1
 function Inc(){
     index += 1;
     UpdatePB();
