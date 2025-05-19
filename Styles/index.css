@@ -5,28 +5,14 @@ body {
   background: url(../Images/BackgroundImages/Background_Home.gif) no-repeat
     fixed;
   background-size: cover;
- backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
 }
 
-.homecontentfirst {
-  display: flex;
-  gap: 70px;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.homecontentsecond{
-  display: flex;
-  gap: 70px;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.scanlines a{
+.scanlines a {
   text-decoration: none;
 }
 
-.p-cardtitle{
+.p-cardtitle {
   color: #6bf3ff;
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
@@ -38,48 +24,37 @@ body {
   bottom: 7%;
 }
 
-.blogsinfo{
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffff;
-  display: none;
-}
-
-.u-blogs {
-  position: relative;
+.page-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 90%;
+  max-width: 900px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 0;
+  visibility: hidden;
+  top: 350px;
   border: solid #fc53e9 7px;
   padding: 2rem;
   background-color: rgba(5, 5, 20, 0.95);
   text-align: center;
- /* display: grid*/;
-}
-
-.page-card {
-  display: none;
-  height: auto;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .page-card.visible {
-  display: flex;
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+  pointer-events: auto;
+  z-index: 1;
+  visibility: visible;
 }
 
-
-
-.u-essays {
-  position: relative;
-  border: solid #fc53e9 7px;
-  padding: 2rem;
-  background-color: rgba(5, 5, 20, 0.95);
-  text-align: center;
- /* display: grid;*/
- }
-
-.essaysinfo{
+.cardinfo {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -87,40 +62,13 @@ body {
   display: none;
 }
 
-.u-design {
-  position: relative;
-  border: solid #fc53e9 7px;
-  padding: 5rem;
-  background-color: rgba(5, 5, 20, 0.95);
-  text-align: center;
-  /*display: grid;*/
-}
-
-.designinfo{
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffff;
-  display: none;
-}
-
-.u-portfolio {
-  position: relative;
-  border: solid #fc53e9 7px;
-  padding: 5rem;
+.scanlines {
+  z-index: 0;
   overflow: hidden;
-  background-color: rgba(5, 5, 20, 0.95);
-  text-align: center;
-  /*display: grid;*/
-
+  position: relative;
 }
 
-.scanlines{
-  z-index:0;
-  overflow: hidden;
-}
-
-.portfolioinfo{
+.portfolioinfo {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -128,28 +76,12 @@ body {
   display: none;
 }
 
-.u-blogs:hover{
-  animation:flicker 1s linear 1;
+.page-card.page-card.visible:hover {
+  animation: flicker 1s linear 1;
   border-color: #a29a00;
-  .blogsinfo{display: inline;}
-}
-
-.u-design:hover{
-  animation:flicker 1s linear 1;
-  border-color: #a29a00;
-  .designinfo{display: inline;}
-}
-
-.u-essays:hover{
-  animation:flicker 1s linear 1;
-  border-color: #a29a00;
-  .essaysinfo{display: inline;}
-}
-
-.u-portfolio:hover{
-  animation:flicker 1s linear 1;
-  border-color: #a29a00;
-  .portfolioinfo{display: inline;}
+  .cardinfo {
+    display: inline;
+  }
 }
 
 .ImageContainer:hover {
@@ -175,11 +107,11 @@ body {
   }
 }
 
-@media (max-width: 685px){
-  .homecontentfirst{
+@media (max-width: 685px) {
+  .homecontentfirst {
     display: grid;
   }
-  .homecontentsecond{
+  .homecontentsecond {
     display: grid;
   }
 }
@@ -202,5 +134,3 @@ body {
 } 
 
 */
-
-
