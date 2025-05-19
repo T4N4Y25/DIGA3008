@@ -60,23 +60,36 @@ function DisplayBlogs(bloglist) {
     })
     .join(" ");
   blogcontainer.innerHTML = displayblog;
-  index += cardsperpage - 1;
+  
 }
 
 DisplayBlogs(blogcards);
-/*
+
 let buttonnext = document
   .querySelector(".next-btn")
   .addEventListener("click", NextBlog);
-*/
 
-let scroll = window.addEventListener("scroll",NextBlog);
-
+  let buttonprev = document.querySelector(".prev-btn").addEventListener("click",PrevBlog);
 function NextBlog() {
   // index+=cardsperpage;
-  if (index > blogcards.length) {
+  index += cardsperpage - 1;
+  if (index > blogcards.length-1) {
     index = 0;
   }
+  
   DisplayBlogs(blogcards);
   // alert("Button was clicked");
+}
+
+function PrevBlog(){
+  index -= (cardsperpage);
+  if(index < 0){
+    let maxPages = Math.floor(blogcards.length/cardsperpage);
+    index = blogcards.length-1;
+  }
+    if (index >= blogcards.length) {
+      index = Math.max(0, blogcards.length - cardsperpage);
+    }
+  
+  DisplayBlogs(blogcards);
 }

@@ -28,7 +28,28 @@ body::before {
   background-color: rgba(5, 5, 20, 0.95);
   z-index: -1;
 }
+.u-arrow {
+  border: solid #fc53e9 2px;
+  color: #fc53e9;
+  height: 50px;
+  width: 50px;
+  font-size: 35px;
+  background-color: rgba(5, 5, 20, 0.95);
+  border-radius: 58%;
+  font-weight: bold;
+}
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.u-arrow:hover {
+  border: none;
+  color: #a29a00;
+}
 .u-blogsnav {
   list-style: none;
   display: flex;
