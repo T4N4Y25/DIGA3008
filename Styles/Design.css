@@ -114,9 +114,8 @@ body {
   color: #a29a00;
 }
 
-.SpecialLink {
-  border: solid #6bf3ff 2px;
-  padding: 5px;
+.QuickLinkList a.highlight{
+  color: #a29a00;
 }
 
 .DesignIntro {
@@ -125,18 +124,48 @@ body {
 
 .DesignIxD {
   border-bottom: solid #ffffff 2px;
+  display: none;
+}
+
+.DesignIxD.visible{
+  display: block;
 }
 
 .StyleProcess {
   border-bottom: solid #ffffff 2px;
+  display: none;
+}
+
+.StyleProcess.visible{
+  display: block;
 }
 
 .StyleGuide {
   border-bottom: solid white 2px;
+  display: none;
 }
+
+.StyleGuide.visible{
+  display: block;
+}
+
+
 
 .WireframeSection {
   border-bottom: solid white 2px;
+  display: none;
+}
+
+.WireframeSection.visible{
+  display: block;
+}
+
+.References{
+  display: none;
+}
+
+.References.visible{
+  display:block;
 }
 
 .refimages {
