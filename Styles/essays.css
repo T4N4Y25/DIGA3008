@@ -1,3 +1,96 @@
 body{
     background-color:rgba(5, 5, 20, 0.95) ;
 }
+
+.headings{
+    font-family: "Audiowide",sans-serif ;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bf3ff;
+    text-align: center;
+    gap: 50px;
+}
+
+.essayContent{
+    font-family: "Barlow",sans-serif;
+    font-weight:400;
+    font-style: normal;
+    color: white;
+
+    text-align: left;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    border: solid,1px;
+    border-color: white;
+    padding: 40px;
+
+    word-spacing: 2px;
+
+}
+
+.p-ref{
+    font-family: "Barlow",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-left: 70px;
+}
+
+.reflist li{
+    font-family: "Barlow",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-left: 70px;
+    list-style: none;
+    margin-right: 50px;
+    word-spacing: 2px;
+}
+
+.e-first{
+    display: none;
+}
+
+.e-first.visible{
+    display: block;
+}
+
+.e-second{
+    display: none;
+}
+
+.e-second.visible{
+    display: block;
+}
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.u-arrow{
+  border: solid #fc53e9 2px;
+  color: #fc53e9;
+  height: 50px;
+  width: 50px;
+  font-size: 35px;
+  background-color: rgba(5, 5, 20, 0.95);
+  border-radius: 58%;
+  font-weight: bold;
+  display: none;
+}
+
+.u-arrow:hover{
+  border: none;
+  color: #a29a00;
+}
+
+.u-arrow.show{
+    display: block;
+}

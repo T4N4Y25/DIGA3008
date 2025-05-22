@@ -38,6 +38,24 @@ const blogcards = [
     title:
       "A close reading on “How Geography Shapes—and Is Shaped by—the Internet” ",
   },
+  {
+    num: 11,
+    link: "Blog11.html",
+    Week: "Week 11 Blog",
+    title: "Critical Reflection on “Digital inequalities and why they matter” by Robinson",
+  },
+  {
+    num: 12,
+    link: "Blog12.html",
+    Week: "Week 12 Blog",
+    title: "How code matters regarding decolonialism and development process with JavaScript.",
+  },
+  {
+    num: 13,
+    link: "Blog13.html",
+    Week: "Week 13 Blog",
+    title: "Ethical Internet",
+  },
 ];
 
 let blogcontainer = document.querySelector(".u-blogsnav"); //Main container representing a blog card
