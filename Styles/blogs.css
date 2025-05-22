@@ -125,3 +125,10 @@ body::before {
   height: 500px;
   width: 500px;
 }
+
+.blogLink{
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6bf3ff;
+}

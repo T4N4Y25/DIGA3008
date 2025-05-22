@@ -1,4 +1,4 @@
-const progressbar = [9,18,27,36,45,55,34,64,73,82,91,100]; //Different percentage width for each blogs progress bar
+const progressbar = [9,18,27,36,45,55,65,75,85,95,100]; //Different percentage width for each blogs progress bar
 const blogIndexMap = { //Due to the blog names not being sequential an array is made to help indexing
   "Blog1.html": 0,
   "Blog2.html": 1,

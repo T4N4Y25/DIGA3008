@@ -29,7 +29,19 @@ const blogcards = [
     num: 7,
     link: "Blog7.html",
     Week: "Week 7 Blog",
-    title: "UI and UX andlysis for Essay 1",
+    title: "UI and UX analysis for Essay 1",
+  },
+  {
+    num: 8,
+    link: "Blog8.html",
+    Week: "Week 8 Blog",
+    title: "Essay 1 comments for Interactive Media",
+  },
+  {
+    num: 9,
+    link: "Blog9.html",
+    Week: "Week 9 Blog",
+    title: "The Internet, Society and Design Justice",
   },
   {
     num: 10,
