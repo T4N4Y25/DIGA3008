@@ -63,7 +63,7 @@
   height: 75px;
   margin-left: -60px;
   padding-left: 0px;
-  /*display: none;*/
+  
 }
 
 .u-navbarlist {
@@ -78,7 +78,6 @@
   z-index: 1000;
 }
 
-/* Slide-out when hidden */
 .u-navbarlist.hide {
   opacity: 0;
   transform: translateX(100%);
@@ -157,6 +156,3 @@ body{
 }
 }
 
-/*.hide{
-  display: none;
-}*/
