@@ -59,7 +59,7 @@ function Timer() {
 }
 
 //------Rain effect code------//
-
+//Followed the tutorial found here: University of Derby (2012) A guide to Harvard Referencing. [Online video]. 12 July. Available at: https://www.youtube.com/watch?v=ni2Sm_j-PjU (Accessed: 23 May 2025).
 function initRainEffect() {
   const canvas = document.getElementById("rain");
   const ctx = canvas.getContext("2d");
