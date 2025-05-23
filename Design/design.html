@@ -60,11 +60,43 @@
       <div class="DesignLayoutSplit">
         <div class="QuickLinksContainer">
           <ol class="QuickLinkList">
-            <li><a class="IxDlink highlight" href="#IxD" data-filter="DesignIxD">The IxD Process</a></li>
-            <li><a class="StyleProcessLink highlight" href="#StyleProcess" data-filter="StyleProcess">The Styling Process</a></li>
-            <li><a class="StyleGuideLink highlight" href="#StyleGuide" data-filter="StyleGuide">Style Guide</a></li>
-            <li><a class="WireFramesLink highlight" href="#WireFrames" data-filter="WireframeSection">Final WireFrames</a></li>
-            <li><a class="ReferencesLink highlight" href="#References" data-filter="References">References</a></li>
+            <li>
+              <a class="IxDlink highlight" href="#IxD" data-filter="DesignIxD"
+                >The IxD Process</a
+              >
+            </li>
+            <li>
+              <a
+                class="StyleProcessLink highlight"
+                href="#StyleProcess"
+                data-filter="StyleProcess"
+                >The Styling Process</a
+              >
+            </li>
+            <li>
+              <a
+                class="StyleGuideLink highlight"
+                href="#StyleGuide"
+                data-filter="StyleGuide"
+                >Style Guide</a
+              >
+            </li>
+            <li>
+              <a
+                class="WireFramesLink highlight"
+                href="#WireFrames"
+                data-filter="WireframeSection"
+                >Final WireFrames</a
+              >
+            </li>
+            <li>
+              <a
+                class="ReferencesLink highlight"
+                href="#References"
+                data-filter="References"
+                >References</a
+              >
+            </li>
           </ol>
         </div>
 
@@ -203,6 +235,30 @@
                 </li>
               </ul>
             </section>
+
+            <section class="JavaScriptUpdates">
+              <h3 class="p-DesignHeadingThree">Updates to IxD Process</h3>
+              <p class="DesignParagraph">
+                The inclusion of JavaScript allows for updates within the IxD
+                process. One key update is the Information Structure as
+                JavaScript allows more control as to what can be seen at a time.
+              </p>
+              <figure class="Wireframe">
+                <img
+                  src="../Images/DesignImagesThree/IxD_infostructure.jpg"
+                  alt="The updated information structure."
+                />
+              </figure>
+
+              <p class="DesignParagraph">
+                The user flow remains relatively the same with the exception of
+                the projects displayed which will no longer be displayed via
+                their own page but rather through a filtering system which can
+                be incorporated through JavaScript. The interface elements also
+                remain the same with a primary focus on links, buttons, and
+                progress bars.
+              </p>
+            </section>
           </section>
 
           <section class="StyleProcess visible">
@@ -280,6 +336,40 @@
               src = ../Images/DesignImages/Icons.jpg alt = "Brainstorming the
               icon and interface elements.">
             </figure>
+            <section class="JavaScriptUpdates">
+              <h3 class="p-DesignHeadingThree">Updates to the Style Process</h3>
+              <p class="DesignParagraph">
+                One key update is to the base UI is a move towards a simpler
+                structure primarily consisting of a header (the navigation bar),
+                the page content, and a footer which assists in navigation
+                clarity. An example of how the footer will be used is in showing
+                how many sections there are to a page, for example the home page
+                has four page cards the user can scroll through. If the user is
+                on the first page card, the footer will represent this as page
+                1/4 and so forth. The blog pages will differ slightly in terms
+                of the footer due to the inclusion of a progress bar which will
+                show the user how many blogs they have read.
+              </p>
+              <figure class="Wireframe">
+                <img
+                  src="../Images/DesignImagesThree/BaseUI_3.jpg"
+                  alt="An updated image of the base UI."
+                />
+              </figure>
+              <p class="DesignParagraph">
+                The addition of the footer which can dynamically update is now
+                possible due to the inclusion of JavaScript.
+              </p>
+              <h4 class="p-DesignHeadingFour">
+                Updates to the colours and interface elements:
+              </h4>
+              <figure class="moodboard">
+                <img
+                  src="../Images/DesignImagesThree/StyleProcess_ColourAndIE.jpg"
+                  alt="An updated mood board for the colour palette and interface elements"
+                />
+              </figure>
+            </section>
           </section>
 
           <section class="StyleGuide visible">
@@ -389,6 +479,47 @@
                 alt="2nd design concept"
               />
             </figure>
+            <section class="JavaScriptUpdates">
+              <h3 class="p-DesignHeadingThree">Updates to the Style Guide</h3>
+              <p class="DesignParagraph">
+                The style guide held up quite well with only a few minor changes
+                needed such as a change to the background colour (changed from
+                black to a transparent navy blue - #050514F2) as the black
+                background contrasted to heavily with the white text and caused
+                eye-strain.
+              </p>
+              <p class="DesignParagraph">
+                The homepage style also changed due to the ability to create
+                effects with JavaScript. Instead of a gif that plays as the
+                background for the homepage, a rain effect will be created using
+                JavaScript to keep the background colour consistent across all
+                pages while still pertaining to the late-night city theme.
+              </p>
+              <p class="DesignParagraph">
+                The navigation bar will no longer consist of icons acting as the
+                links as these icons are not intuitive to users. Instead simple
+                text will act as the links allowing for the user to know where
+                they are going at a first glance.
+              </p>
+
+              <p class="DesignParagraph">
+                The two fonts used - Audiowide and Barlow both work very well
+                together and are consistent with the theme. Audiowide can become
+                illegible if used in paragraphs so this font will be reserved
+                specifically for main headings and card titles. Barlow is a
+                legible font and will be used for the paragraph text, however
+                the text being white can become illegible when appearing in a
+                paragraph so a gap of around 2px-5px will be implemented to help
+                make the text more legible.
+              </p>
+              <p class="DesignParagraph">
+                To help contain paragraphs within sections such as essays and
+                blogs, a thin, white border will be placed around the text to
+                negate empty space created by margins. Text will be left-aligned
+                but the main body of text will be centred to prevent the user
+                from needing to read from one end of the screen to the other.
+              </p>
+            </section>
           </section>
 
           <section class="WireframeSection visible">
@@ -487,6 +618,32 @@
               (choosing email as well as GitHub for now) and an option to view
               or download my CV.
             </p>
+
+            <p class="DesignParagraph">
+              An update has been made to the homepage design. The animated gif
+              for the background has been removed to keep the background colour
+              consistent across all pages. The page cards are also navigated
+              through scrolling with the mouse or swiping with a touchscreen to
+              traverse the page cards. An indicator in the footer will help give
+              clarity on the number of pages the user can scroll through.
+            </p>
+            <h3 class="p-DesignHeadingThree">Updated Homepage</h3>
+            <figure class="Wireframe">
+              <img
+                src="../Images/DesignImagesThree/Wireframes_homepage.jpg"
+                alt="An updated wireframe of the homepage"
+              />
+            </figure>
+
+            <h3 class="p-DesignHeadingThree">Essay page</h3>
+            <p class="DesignParagraph">
+              The essay page will consist of just the essay itself and a
+              navigation button. JavaScript will be used to navigate between the
+              two essays eliminating the need for separate pages for each essay.
+            </p>
+            <figure class="Wireframe">
+              <img src="../Images/DesignImagesThree/Wireframes_essay.jpg" alt="A wireframe of the essays page">
+            </figure>
           </section>
 
           <section id="References" class="References visible">
