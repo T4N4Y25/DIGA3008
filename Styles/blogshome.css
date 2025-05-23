@@ -39,12 +39,19 @@ body::before {
   font-weight: bold;
 }
 
-footer{
+.btn-container{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
+
+.footerLogo img{
+  height:70px;
+  width: auto;
+}
+
+
 
 .u-arrow:hover {
   border: none;

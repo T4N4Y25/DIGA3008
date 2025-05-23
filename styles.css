@@ -90,6 +90,35 @@ body{
   overflow-x:hidden;
 }
 
+.footerLogo img{
+  height:70px;
+  width: auto;
+}
+
+.defaultFooter{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 450px;
+  font-family: "Barlow",sans-serif;
+  color:#6bf3ff;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.blogsFooter{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  font-family: "Barlow",sans-serif;
+  color:#6bf3ff;
+  font-style: normal;
+  font-weight: bold;
+}
+
 @media (max-width:778px){
     .u-navbar {
     flex-direction: column;
