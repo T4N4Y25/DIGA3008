@@ -16,7 +16,7 @@
         <div class="bannerlogo">
           <h1 class="p-Banner">Neo-Tanay</h1>
           <figure class="logo">
-            <img src = "../Images/PageLogos/Hamburger_menu.png" alt = "Logo">
+            <img src="../Images/PageLogos/Hamburger_menu.png" alt="Logo" />
           </figure>
         </div>
       </header>
@@ -55,6 +55,14 @@
             <a href="#AirHockey"><li>AirHockey</li></a>
             <a href="#Inventory"><li>Village Inventory System</li></a>
             <a href="#Winter"><li>Winter is Coming</li></a>
+          </ol>
+        </div>
+        <div class="QuickLinks_Engineering">
+          <h2 class="p-EngTitle">Software and Electronics</h2>
+          <ol class="EngList">
+            <li>Cyclone Arcade Game</li>
+            <li>15-Block Puzzle Solver</li>
+            <li>Clap-Detection Circuit</li>
           </ol>
         </div>
       </section>
@@ -133,7 +141,7 @@
           </div>
 
           <div class="ProjectDisplay">
-            <h3 class="p-GameProject">Winter is Coming</h3>
+            <h3 id="Winter" class="p-GameProject">Winter is Coming</h3>
             <div class="ImageandLinks">
               <figure class="screenshot">
                 <img
@@ -142,12 +150,12 @@
                 />
               </figure>
               <div class="LinksTable">
-                <h4 id="Winter" class="p-Links">Links</h4>
+                <h4 class="p-Links">Links</h4>
                 <a
                   target="_blank"
                   class="u-linkurl"
                   href="https://t4n4y25.itch.io/winter-is-coming"
-                  >Download Build</a
+                  >Download Build or Play in your Browser</a
                 >
               </div>
             </div>
@@ -158,6 +166,114 @@
               creating assets in blender. The game has you traverse a grim maze,
               collecting items that will help you and avoiding the creatures
               lurking within!
+            </p>
+          </div>
+        </section>
+
+        <section class="EngSection">
+          <h2 class="p-EngTitleTwo">Software and Electronics</h2>
+          <div class="ProjectDisplay">
+            <h3 id="Micros" class="p-EngProject">Cyclone Arcade Game</h3>
+            <div class="ImageandLinks">
+              <figure class="verticalImg">
+                <img
+                  src="../Images/PortfolioImages/CircuitPicture.jpg"
+                  alt="Cyclone Game Circuit"
+                />
+              </figure>
+              <div class="LinksTable">
+                <h4 class="p-Reports">Project Report</h4>
+                <a
+                  target="_blank"
+                  class="u-linkurl"
+                  href="../Downloadables/MicrosReport.pdf"
+                >
+                  Read Report
+                </a>
+                <a href="../Downloadables/MicrosReport.pdf" download
+                  >Download Report</a
+                >
+              </div>
+            </div>
+            <p class="paragraph">
+              The popular cyclone arcade game is made using the Arduino Uno
+              Microcontroller and is programmed entirely using AVR assembly! A
+              large emphasis on this project was using timers and interrupts
+              through a strolling LED sequence where the user can press a button
+              to try match the strolling light with a randomly chosen LED light.
+              This was an individual project which took around two months in
+              2024 to complete for the course, Microprocessors.
+            </p>
+          </div>
+
+          <div class="ProjectDisplay">
+            <h3 id="SoftwareDev" class="p-EngProject">
+              15-Block Puzzle Solver
+            </h3>
+            <div class="ImageandLinks">
+              <figure class="screenshot">
+                <img
+                  src="../Images/PortfolioImages/SoftwareImg.png"
+                  alt="Code Snippet from my Software Development project"
+                />
+              </figure>
+              <div class="LinksTable">
+                <h4 class="p-Reports">Project Report</h4>
+                <a
+                  class="u-linkurl"
+                  target="_blank"
+                  href="../Downloadables/TanayRangasamy_2544162.pdf"
+                  >View Report</a
+                >
+                <a href="../Downloadables/TanayRangasamy_2544162.pdf" download
+                  >Download Report</a
+                >
+              </div>
+            </div>
+            <p class="paragraph">
+              This project required a program to be written in C++ which can
+              automatically solve popular 15-block puzzle. Puzzle inputs are
+              provided to the program using textfiles and the expected outcome
+              on whether the program has solved the puzzle with the moves used
+              is written to an output file. This project was individually done
+              over the course of around two months for the course, Software
+              Development 1.
+            </p>
+          </div>
+
+          <div class="ProjectDisplay">
+            <h3 id="ElecPrj" class="p-EngProject">Clap-Detecting Circuit</h3>
+            <div class="ImageandLinks">
+              <figure class="verticalImg">
+                <img
+                  src="../Images/PortfolioImages/ElecImg.jpg"
+                  alt="The circuit built for detecting and counting claps."
+                />
+              </figure>
+              <div class="LinksTable">
+                <h4 class="p-Reports">Project Report</h4>
+                <a
+                  class="u-linkurl"
+                  target="_blank"
+                  href="../Downloadables/main.pdf"
+                  >View Report</a
+                >
+                <a href="../Downloadables/main.pdf" download>Download Report</a>
+              </div>
+            </div>
+            <p class="paragraph">
+              The Clap-Detecting circuit is a circuit with no software used;
+              only hardware. A microphone measures claps as inputs and
+              subsequentally counts them on a display. The circuit acts a
+              subsystem for a larger circuit known as the Crypto-Box. When a
+              correct number of claps is detected, the circuit allows
+              progression to the next sub-system involving a Piezo sensor
+              (monitors taps on the sensor as inputs) which was done by a fellow
+              group member for the project. My role in the Crypto-Box project
+              was to create the circuit which counts claps as inputs using an
+              electret microphone and indicate when the correct number of claps
+              is detected (four claps) using an LED. The project was
+              successfully completed and met all the requirements.
             </p>
           </div>
         </section>
@@ -172,5 +288,6 @@
       </figure>
     </footer>
     <script src="../Scripts/nav.js"></script>
+    <script src="../Scripts/portfolio.js"></script>
   </body>
 </html>

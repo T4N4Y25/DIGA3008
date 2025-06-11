@@ -28,6 +28,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: white;
+  text-align: left;
 }
 
 .p-GameProject {
@@ -36,6 +37,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+
 
 main {
   display: flex;
@@ -65,7 +68,7 @@ main {
   font-style: normal;
   text-decoration: none;
   border: solid #6bf3ff 4px;
-  text-align: center;
+ /* text-align: center; */
   display: inline-block;
   padding: 1rem;
 }
@@ -74,6 +77,36 @@ main {
     animation: flicker 3s linear infinite;
     color: #a29a00;
 }
+
+.QuickLinks_Engineering{
+  color:#fc53e9;
+  font-family: "Audiowide", sans-serif;
+  font-weight:400 ;
+  font-style: normal;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.p-EngTitle{
+  border: solid #fc53e9 4px;
+  padding: 1rem;
+}
+
+.p-EngTitle:hover{
+  animation: flicker 3s linear infinite;
+  color:#a29a00;
+}
+
+.EngList li{
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.EngList li:hover{
+  color: #a29a00;
+}
+
+
 
 .p-GamesTitleTwo{
     color: #6bf3ff;
@@ -109,10 +142,13 @@ main {
   flex: 3;
 }
 
+.GamesSection{
+  text-align: center;
+}
+
+
 .LinksTable {
   display: table;
-  border: 2px solid #fc53e9;
-  border-radius: 8px;
   padding: 1rem;
 }
 
@@ -130,7 +166,8 @@ main {
 }
 
 .ProjectDisplay {
-  margin-bottom: 5%;
+  margin-bottom:5%;
+  border-bottom: solid white 1px ;
 }
 
 .p-Links {
@@ -152,6 +189,39 @@ main {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+}
+
+.verticalImg img{
+  height: 400px;
+}
+
+.EngSection{
+  text-align: center;
+}
+
+.p-EngTitleTwo{
+  font-family: "Audiowide",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fc53e9;
+  border: #fc53e9 solid 4px;
+  display: inline-block;
+  padding: 1rem;
+  animation: flicker 3s infinite;
+}
+
+.p-EngProject{
+    font-family: "Audiowide",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fc53e9;
+}
+
+.p-Reports{
+   font-family: "Audiowide",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fc53e9;
 }
 
 @keyframes flicker{
