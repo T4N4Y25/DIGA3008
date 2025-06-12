@@ -9,7 +9,7 @@ fetch(`https://api.github.com/users/${username}/repos`) //Uses GitHub Rest API
       const li = document.createElement("li");
       li.innerHTML = `<a href="${repo.html_url}" target="_blank">${
         repo.name
-      }</a>: ${repo.description || " "}`; //Generate a link to the repo with a description if there is one for the repo
+      }</a>: ${repo.description || "Project Repository"}`; //Generate a link to the repo with a description if there is one for the repo
       repoList.appendChild(li);
     });
   })

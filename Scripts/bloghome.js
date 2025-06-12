@@ -68,6 +68,12 @@ const blogcards = [
     Week: "Week 13 Blog",
     title: "Ethical Internet",
   },
+  {
+    num: 14,
+    link: "Blog14.html",
+    Week: "Week 14 Blog",
+    title: "Justice and Ethics in Programming Practices"
+  },
 ];
 
 let blogcontainer = document.querySelector(".u-blogsnav"); //Main container representing a blog card

@@ -1,4 +1,4 @@
-const progressbar = [9,18,27,36,45,55,65,75,85,95,100]; //Different percentage width for each blogs progress bar
+const progressbar = [8, 16, 24, 32, 40, 48, 58, 68, 78, 88, 95, 100]; //Different percentage width for each blogs progress bar
 const blogIndexMap = { //Due to the blog names not being sequential an array is made to help indexing
   "Blog1.html": 0,
   "Blog2.html": 1,
@@ -11,6 +11,7 @@ const blogIndexMap = { //Due to the blog names not being sequential an array is 
   "Blog11.html": 8,
   "Blog12.html": 9,
   "Blog13.html": 10,
+  "Blog14.html":11,
 };
 let pbclass = document.querySelector('.week-progress-bar'); //Get th progress bar container
 
