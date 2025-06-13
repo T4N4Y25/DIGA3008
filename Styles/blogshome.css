@@ -115,5 +115,49 @@ body::before {
     justify-content: center;
   }
 
+  @media (max-width: 685px) {
+  body {
+    background-size: contain;
+  }
+
+  .u-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+
+  .btn-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .footerLogo img {
+    height: 50px;
+  }
+
+  .p-blogweek {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .u-blogsnav {
+    display: grid;
+    gap: 20px;
+    padding: 0;
+    margin: 2rem auto;
+  }
+
+  .u-blogcard {
+    width: 90%;
+    height: auto;
+  }
+
+  .u-blogcard:hover {
+    width: 92%;
+    height: auto;
+  }
+}
+
+
 }
 

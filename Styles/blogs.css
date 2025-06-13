@@ -130,6 +130,9 @@ body::before {
   justify-content: center;
   display: flex;
 }
+.blogFourImages{
+  display: grid;
+}
 
 .handdrawn img {
   height: 500px;
@@ -142,3 +145,58 @@ body::before {
   font-style: normal;
   color: #6bf3ff;
 }
+
+@media screen and (max-width: 685px) {
+  .week-progress-container {
+    width: 90%;
+    left: 5%;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3rem;
+  }
+
+  .u-arrow,
+  .exit {
+    height: 45px;
+    width: 45px;
+    font-size: 28px;
+  }
+
+  .exit {
+    width: 60px;
+  }
+
+  .page-indicator {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .h-entry {
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+    top: 1em;
+    padding: 15px;
+  }
+
+  .p-MainTitle {
+    font-size: 1.4rem;
+  }
+
+  .e-content {
+    font-size: 1rem;
+  }
+
+  .handdrawn img {
+    width: 90%;
+    height: auto;
+  }
+
+  .blogFourImages{
+    display: grid;
+  }
+}
+

@@ -254,7 +254,7 @@ main {
     }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 960px) {
   main {
     flex-direction: column;
     padding: 1rem;
