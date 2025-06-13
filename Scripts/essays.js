@@ -1,32 +1,58 @@
 let btnnext = document.querySelector('.next');//Store the next essay button
 let btnprev = document.querySelector('.prev');//Store the previous essay button
 
-let essayOne = document.querySelector('.e-first');//Store the section containing the first essay
-let essayTwo = document.querySelector('.e-second');//Store the section containing the second essay
+let essays = [document.querySelector('.e-first'), document.querySelector('.e-second'), document.querySelector('.e-third') ]; //Create an array with all the essays to iterate through using an index
+let index = 0; //Controls which essay is displayed
 
-function Showfirst(){ //A funtion which displays the first essay and the button allowing navigation to the next essay
-    essayOne.classList.toggle("visible",true); //Make the first essay display
-    essayTwo.classList.toggle("visible",false); //Second essay no longer displays
-    window.scrollTo({ //Scrolls to top of screen so user can read from beginning 
-        top: 100,
-        behaviour: "smooth",
-    });
+function essayDisplay(){ //Displays the essay item from the essay array depending on the index
+essays.forEach((current, i) =>{
+    if(i !== index){
+        current.classList.toggle("visible", false); //If essay item's index does not match the index value, hide the essay; else display the essay
+    }
+    else{
+        current.classList.toggle("visible",true);
+    }
 
-    btnnext.classList.toggle("show",true); //Make the button navigating to the second essay display
-    btnprev.classList.toggle("show",false); //Button navigating to first essay no longer displays
+} )
+
+window.scrollTo({ //Scroll to top of screen when viewing a new essay
+    top: 100,
+    behavior: "smooth"
+})
+
+if(index > 0){
+    btnprev.classList.toggle("show",true); //If index is at zero i.e the first essay, hide the previous essay button
+}
+else{
+    btnprev.classList.toggle("show",false);
 }
 
-function ShowSecond(){ //Same concept as Showfirst() but display the second essay and the relevant button
-    essayTwo.classList.toggle("visible",true);
-    essayOne.classList.toggle("visible",false);
-     window.scrollTo({
-        top: 100,
-        behaviour: "smooth",
-    });
+if(index < essays.length-1){ //If index is at 2 i.e the last essay (reflection essay), hide the next essay button
+    btnnext.classList.toggle("show",true);
+}
+else{
     btnnext.classList.toggle("show",false);
-    btnprev.classList.toggle("show",true);
+}
 }
 
-Showfirst(); //Display first essay by default
-btnnext.addEventListener("click",ShowSecond); //Forward arrow button displays essay 2
-btnprev.addEventListener("click",Showfirst); //Backward arrow button displays essay 1
+function displayNext(){ //Increments the index and hence displays the next essay
+    if(index < essays.length-1){ //Check to ensure index is within bounds
+        index++;
+        essayDisplay();
+    }
+}
+
+function displayPrev(){ //Decrement the index and hence display the previous essay
+    if(index > 0){ 
+        index--;
+        essayDisplay();
+    }
+}
+
+btnnext.addEventListener("click", displayNext); 
+btnprev.addEventListener("click",displayPrev);
+
+essayDisplay(); //Show the first essay as index is currently set at 0 when page loads
+
+
+

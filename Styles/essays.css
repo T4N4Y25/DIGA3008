@@ -64,6 +64,14 @@ body{
     display: block;
 }
 
+.e-third{
+    display: none;
+}
+
+.e-third.visible{
+    display: block;
+}
+
 
 
 footer{
@@ -74,6 +82,10 @@ footer{
     margin-bottom: 20px;
 }
 
+.u-btns{
+    display: inline-flex;
+    gap: 2rem;
+}
 .u-arrow{
   border: solid #fc53e9 2px;
   color: #fc53e9;
