@@ -51,26 +51,11 @@ function UpdatePB(){ //Function to dynamically update the progress bar
    updatePagenum();
 
 }
-/*This was an alternative method to get the correct index mapped via buttons but this method does not work if the user starts at a blog that isn't Blog1
-function Inc(){
-    index += 1;
-    UpdatePB();
-    localStorage.setItem('index', index);
-}
-
-function Dec(){
-    index -= 1;
-    UpdatePB();
-    localStorage.setItem('index', index);
-}
-
-let backbtn = document.querySelector('.u-previousblog');
-if(backbtn !== null && backbtn !== undefined){
-    backbtn.addEventListener("click",Dec);
-}
-
-let nextbtn = document.querySelector('.u-nextblog');
-if(nextbtn !== null && nextbtn !== undefined){
-    nextbtn.addEventListener("click",Inc);
-} */
 UpdatePB();
+
+let hamburger = document.querySelector(".hamburger");
+let navList = document.querySelector(".navlist");
+
+hamburger.addEventListener("click", () => {
+  navList.classList.toggle("hide");
+});

@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.page-indicator{
+.page-indicator {
   font-family: "Audiowide", sans-serif;
   color: #6bf3ff;
   font-style: normal;
@@ -76,6 +76,66 @@ main {
   position: fixed;
   margin-top: 25px;
   margin-left: 10px;
+}
+
+.navlistcontainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align child items to the right */
+  z-index: 1;
+  align-items: center;
+  margin-right: 2px;
+  width: 10rem;
+}
+
+.hamburger img {
+  width: 150px;
+  height: 75px;
+  cursor: pointer;
+}
+
+.hamburger img:hover {
+  width: 175px;
+  height: 100px;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+  pointer-events: auto;
+}
+
+.navlist.hide {
+  opacity: 0;
+  pointer-events: none;
+  height: 1rem;
+}
+
+.navlist li {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #6bf3ff;
+  list-style: none;
+  padding-bottom: 1rem;
+  margin-right: 0.5px;
+  cursor: pointer;
+}
+
+.navlist a{
+  text-decoration: none;
+}
+
+.navlist li:hover {
+  color: #a29a00;
 }
 
 body {
@@ -131,7 +191,7 @@ body::before {
   justify-content: center;
   display: flex;
 }
-.blogFourImages{
+.blogFourImages {
   display: grid;
 }
 
@@ -140,7 +200,7 @@ body::before {
   width: 500px;
 }
 
-.blogLink{
+.blogLink {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -196,8 +256,36 @@ body::before {
     height: auto;
   }
 
-  .blogFourImages{
+  .blogFourImages {
     display: grid;
   }
-}
 
+  .navlistcontainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8rem;
+    margin-right: 5px;
+    align-items: center;
+  }
+
+  .hamburger img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .hamburger img:hover {
+    width: 110px;
+    height: 60px;
+  }
+
+  .navlist {
+    font-size: 0.9rem;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+
+  .navlist li {
+    padding-bottom: 0.5rem;
+  }
+}

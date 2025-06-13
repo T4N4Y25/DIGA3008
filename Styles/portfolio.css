@@ -59,7 +59,6 @@ main {
   justify-content: center;
   align-self: flex-start;
   cursor: pointer;
- /* background: url(../Images/PageLogos/DesignLogo_beta.jpg) no-repeat; */
 }
 
 .p-GamesTitle {
@@ -69,7 +68,6 @@ main {
   font-style: normal;
   text-decoration: none;
   border: solid #6bf3ff 4px;
- /* text-align: center; */
   display: inline-block;
   padding: 1rem;
 }
