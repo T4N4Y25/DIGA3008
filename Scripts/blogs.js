@@ -43,6 +43,13 @@ function UpdatePB(){ //Function to dynamically update the progress bar
     }
    }
 
+   function updatePagenum(){ //Function to update the page number at the footer for added clarity
+    let indicator = document.querySelector('.page-indicator');
+    indicator.innerHTML = `Blog ${index +1} of 12`; //Uses the index to set the page
+   }
+
+   updatePagenum();
+
 }
 /*This was an alternative method to get the correct index mapped via buttons but this method does not work if the user starts at a blog that isn't Blog1
 function Inc(){
